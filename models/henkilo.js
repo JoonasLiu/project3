@@ -1,3 +1,4 @@
+//Otetaan käyttöön tarvittavat työkalut
 const mongoose = require('mongoose')
 
 //Luodaan henkilö-skeema

@@ -1,6 +1,7 @@
+//Otetaan käyttöön tarvittavat työkalut
 const express = require('express')
 const router = express.Router()
-const Henkilo = require('../models/henkilo')
+const Henkilo = require('project3/models/henkilo')
 
 
 //Listataan kaikki henkilöt
