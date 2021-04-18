@@ -23,5 +23,5 @@ app.use(express.json())
 const henkilotRouter = require('./routes/henkilot')
 app.use('/henkilot', henkilotRouter)
 
-//Laitetaan appi käymään localhost portilla 3000
-app.listen(3000, () => console.log('Server running'))
+//Laitetaan appi käymään portilla
+app.listen(process.env.PORT, () => console.log('Server running'))
