@@ -4,7 +4,7 @@ Henkilöhakemisto, johon on listattuna hyviä tyyppejä sekä miksi he ovat hyvi
 
 ## HTTP verbit
 
-Sisältää toiminnallisuuden verbeille GET, POST, PATCH ja DELETE
+Sisältää toiminnallisuuden verbeille GET, POST, PATCH ja DELETE. Verbien toiminnallisuus testattu VSCoden "REST Client"-nimisellä extensionilla.
 
 ## Linkit
 
