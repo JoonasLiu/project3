@@ -1,0 +1,28 @@
+GET http://localhost:3000/henkilot/getall
+
+###
+
+GET http://localhost:3000/henkilot/6079ea87e8a9d327905599a0
+
+###
+
+POST http://localhost:3000/henkilot/add
+Content-Type: application/json
+
+{
+    "name": "kimi",
+    "whyHyva": "ajaa hyvin"
+}
+
+###
+
+DELETE http://localhost:3000/henkilot/delete
+
+###
+
+PATCH http://localhost:3000/henkilot/update/607c3250f15232051c426b1f
+Content-Type: application/json
+
+{
+    "name": "Kimi Räikkönen"
+}
