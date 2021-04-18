@@ -3,8 +3,9 @@ const app = express()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const port = process.env.PORT 
-require('dotenv/config')
+const PORT = process.env.PORT 
+var http = require("http")
+//require('dotenv/config')
 
 //Middlewareja
 app.use(cors())
@@ -24,3 +25,10 @@ app.use(express.json())
 const henkilotRouter = require('./routes/henkilot')
 app.use('/henkilot', henkilotRouter)
 
+http
+  .createServer(function(request, response) {
+    response.writeHead(200, { "Content-Type": "text/plain" });
+    response.write("Hello World!\n"); 
+    response.end("This is the end"); 
+  })
+  .listen(PORT);
