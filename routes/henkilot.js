@@ -7,9 +7,7 @@ const Henkilo = require('../models/henkilo')
 //Listataan kaikki henkilöt
 router.get('/getall', async (req, res) => {
     try {
-        console.log('hello')
         const henkilot = await Henkilo.find()
-        console.log('valmisräkä')
         res.json(henkilot)
     } catch (err) {
         res.status(500).json({ message: err.message})
