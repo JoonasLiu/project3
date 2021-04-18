@@ -3,6 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+const port = process.env.PORT 
 require('dotenv/config')
 
 //Middlewareja
@@ -23,5 +24,3 @@ app.use(express.json())
 const henkilotRouter = require('./routes/henkilot')
 app.use('/henkilot', henkilotRouter)
 
-//Laitetaan appi käymään portilla
-app.listen(process.env.PORT, () => console.log('Server running'))
