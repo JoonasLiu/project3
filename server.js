@@ -27,3 +27,5 @@ app.use('/henkilot', henkilotRouter)
 
 //Laitetaan appi käymään portilla
 app.listen(PORT, () => console.log('Server running'))
+
+alert(process.env.DB_CONNECTION + "connection")
